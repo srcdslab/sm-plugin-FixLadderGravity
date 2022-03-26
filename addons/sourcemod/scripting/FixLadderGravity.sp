@@ -21,7 +21,8 @@ public void OnGameFrame()
 	{
 		if (IsClientInGame(i) && IsPlayerAlive(i))
 		{
-			MoveType MT_MoveType = GetEntityMoveType(i), float fGravity = GetEntityGravity(i);
+			MoveType MT_MoveType = GetEntityMoveType(i);
+            float fGravity = GetEntityGravity(i);
 			if (MT_MoveType == MOVETYPE_LADDER)
 			{
 				if (fGravity != 0.0)
